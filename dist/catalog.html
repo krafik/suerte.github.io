@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<title>SUERTE</title>
+	<meta charset="UTF-8">
+	<meta name="format-detection" content="telephone=no">
+	<!-- <style>body{opacity: 0;}</style> -->
+	<link rel="stylesheet" href="css/style.min.css?_v=20230714130350">
+	<link rel="shortcut icon" href="favicon.ico">
+	<!-- <meta name="robots" content="noindex, nofollow"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#FAFAFA">
+
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#FAFAFA">
+	<meta name="color-scheme" content="light dark">
+
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+
+	<link href="https://unpkg.com/aos@2.3.1/dist/aos.css?_v=20230714130350" rel="stylesheet">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__container">
+				<!-- data-aos="fade-down" data-aos-delay="100" data-aos-duration="1500"  -->
+				<nav class="header-navigation header-navigation__nav site-navigation">
+					<a href="/" class="header__logo">
+						<picture>
+							<img src="img/Logo.png" alt="Логотип Suerte & Elegancia Collections" loading="lazy" width="130" height="58">
+					</a>
+					</picture>
+
+					<ul class="site-navigation__nav-list" data-da=".menu__body, 991.98">
+						<li data-spollers class="site-navigation__nav-item ">
+							<a href="/catalog.html">Каталог</a>
+							<button type="button" data-spoller class="site-navigation__btn-spoller __icon-Arrow-down"></button>
+							<div class="site-navigation__nav-item-body">Контент спойлера</div>
+						</li>
+						<li class="site-navigation__nav-item"><a href="" class="site-navigation__link">Марки тканин</a></li>
+						<li class="site-navigation__nav-item"><a href="" class="site-navigation__link">Про нас</a></li>
+						<li class="site-navigation__nav-item"><a href="" class="site-navigation__link ">Новини</a></li>
+						<li class="site-navigation__nav-item"><a href="" class="site-navigation__link">Контакти</a></li>
+						<li data-spollers class="site-navigation__nav-item ">
+							<a href="#">Для клієнтів</a>
+							<button type="button" data-spoller class="site-navigation__btn-spoller __icon-Arrow-down"></button>
+							<div class="site-navigation__nav-item-body">Контент спойлера</div>
+						</li>
+
+
+					</ul>
+					<ul class="header-navigation__action-list">
+						<li class="header-navigation__action-item"><a href="#" class="header-navigation__action-link __icon-Search"></a></li>
+						<li class="header-navigation__action-item"><a href="#" class="header-navigation__action-link __icon-Like"></a>
+							<span class="header-navigation__quantity-item">0</span>
+						</li>
+						<li class="header-navigation__action-item"><a href="#" class="header-navigation__action-link __icon-Cart"></a>
+							<span class="header-navigation__quantity-item">2</span>
+						</li>
+					</ul>
+
+					<div data-spollers class="header-navigation__site-language-wrap" data-da=".menu__body, 991.98">
+						<button data-spoller class="header-navigation__site-language site-language">
+							<span class="site-language__current">UA</span>
+							<span type="button" class="site-language__btn __icon-Arrow-down"></span>
+
+						</button>
+						<div class="site-language__list-body">
+							<a href="#">UA</a>
+							<a href="#">EN</a>
+							<a href="#">RU</a>
+						</div>
+					</div>
+
+
+
+					<div hidden class="header__menu menu">
+						<button type="button" class="menu__icon icon-menu"><span></span></button>
+						<nav class="menu__body">
+
+						</nav>
+					</div>
+				</nav>
+			</div>
+		</header>
+		<main class="page">
+			<section class="section-catalog">
+				<div class="section-catalog__container">
+					<h1 class="section-catalog__title section-title">каталог тканин</h1>
+					<div data-spollers class="section-catalog__filter">
+						<form action="#" class="section-catalog__filter-form form-filter">
+							<div class="form-filter__column">
+
+								<div class="form-filter__item-wrap">
+									<button type="button" data-spoller class="form-filter__item-title spollers__title">
+										<span class="">Категорії</span>
+										<span class=" __icon-Arrow-down"></span>
+									</button>
+									<div class="form-filter__item-body body-item-filter spollers__body">
+										<ul class="body-item-filter__items-wrap-inner">
+											<li>
+												<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox">
+													<span class="form__fake-checkbox"></span> <span class="body-item-filter__input-title">Категория
+														1</span></label>
+											</li>
+											<li>
+												<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox" disabled>
+													<span class="form__fake-checkbox"></span> <span class="body-item-filter__input-title">Категория
+														2</span></label>
+											</li>
+											<li>
+												<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox" checked disabled>
+													<span class="form__fake-checkbox"></span> <span class="body-item-filter__input-title">Категория
+														3</span></label>
+											</li>
+										</ul>
+									</div>
+								</div>
+
+								<div class="form-filter__item-wrap form-filter__item-filters">
+									<button type="button" data-spoller class="form-filter__item-title spollers__title">
+										<span class="">Фільтри</span>
+										<span class=" __icon-Arrow-down"></span>
+									</button>
+									<div class="form-filter__item-body body-item-filter spollers__body">
+										<ul class="body-item-filter__items-wrap">
+											<li>
+												<fieldset class="body-item-filter__fieldset">
+													<legend>Колір</legend>
+													<ul class="body-item-filter__items-wrap-inner">
+														<li>
+															<!-- <label class="body-item-filter__item"><input
+																	class="body-item-filter__input-check"
+																	type="checkbox"><span
+																	class="body-item-filter__input-title">Синій</span></label> -->
+															<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox">
+																<span class="form__fake-checkbox"></span>
+																<span class="body-item-filter__input-title">Синій</span></label>
+														</li>
+														<li>
+															<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox">
+																<span class="form__fake-checkbox"></span> <span class="body-item-filter__input-title">Темно-синій</span></label>
+
+														</li>
+														<li>
+															<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox">
+																<span class="form__fake-checkbox"></span> <span class="body-item-filter__input-title">Сірий</span></label>
+
+														</li>
+														<li>
+															<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox">
+																<span class="form__fake-checkbox"></span>
+																<span class="body-item-filter__input-title">Білий</span></label>
+
+														</li>
+													</ul>
+												</fieldset>
+											</li>
+											<li>
+												<fieldset class="body-item-filter__fieldset">
+													<legend>Колекція</legend>
+													<ul class="body-item-filter__items-wrap-inner">
+														<li>
+															<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox">
+																<span class="form__fake-checkbox"></span> <span class="body-item-filter__input-title">Wool</span></label>
+
+														</li>
+														<li>
+															<label class="body-item-filter__item"><input class="body-item-filter__input-check" type="checkbox">
+																<span class="form__fake-checkbox"></span>
+																<span class="body-item-filter__input-title">Cotton</span></label>
+
+
+														</li>
+
+
+													</ul>
+												</fieldset>
+											</li>
+
+										</ul>
+									</div>
+								</div>
+							</div>
+
+							<div class="form-filter__column">
+
+								<div class="form-filter__item-search-wrap">
+									<div class="form-filter__search-wrap">
+										<div class="form-filter__search __icon-Search">
+											<input autocomplete="off" type="search" name="form[]" data-error="Ошибка" placeholder="Пошук" class="form-filter__search-input">
+											<!-- <span class="__icon-Search"></span> -->
+										</div>
+										<div class="form-filter__search-result-body">
+											<span>Результат поиска</span>
+										</div>
+									</div>
+
+								</div>
+
+								<div class="form-filter__item-wrap">
+									<button type="button" data-spoller class="form-filter__item-title spollers__title">
+										<span class="">Сортувати від А до Я</span>
+										<span class=" __icon-Arrow-down"></span>
+									</button>
+									<div class="form-filter__item-sort-body body-sort-filter spollers__body">
+										<div class="body-sort-filter__wrap">
+											<a href="#">від найдорожчого</a>
+											<a href="#">від найдешевшого</a>
+										</div>
+
+									</div>
+								</div>
+							</div>
+						</form>
+
+
+
+						<!-- <div>Категорії</div>
+						<div>Фільтри</div>
+						<div>Пошук</div>
+						<div>Сортувати від А до Я</div> -->
+					</div>
+					<ul class="section-catalog__catalog page-catalog-list">
+						<li class="page-catalog-list__item item-page-catalog-list">
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/17-nutmeg.jpg" srcset="img/17-nutmeg_2x.jpg 2x" alt="">
+							</div>
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">17 Nutmeg</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/14-Dune.jpg" srcset="img/14-Dune_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">14 Dune</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/13-Hemp.jpg" srcset="img/13-Hemp_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">13 Hemp</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/11-Pearl.jpg" srcset="img/11-Pearl_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">11 Pearl</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/08-Putty.jpg" srcset="img/08-Putty_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">08 Putty</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/06-Peppercorn.jpg" srcset="img/06-Peppercorn_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">06 Peppercorn</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/05-Caviar.jpg" srcset="img/05-Caviar_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">05 Caviar</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/03-Slate.jpg" srcset="img/03-Slate_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">03 Slate</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/02-Sterling.jpg" srcset="img/02-Sterling_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">02 Sterling</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/24-Copen.jpg" srcset="img/24-Copen_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">24 Copen</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/22-Caribbean.jpg" srcset="img/22-Caribbean_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">22 Caribbean</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+
+
+						</li>
+						<li class="page-catalog-list__item item-page-catalog-list">
+
+							<div class="item-page-catalog-list__img-wrap">
+								<img class="item-page-catalog-list__img" src="img/21-Indigo.jpg" srcset="img/21-Indigo_2x.jpg 2x" alt="">
+							</div>
+
+							<a href="#">
+								<h2 class="item-page-catalog-list__title">21 Indigo</h2>
+							</a>
+							<dl class="item-page-catalog-list__item-d-list">
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Колекція:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Wool</dd>
+								</div>
+								<div class="item-page-catalog-list__item-dl-wrap">
+									<dt class="item-page-catalog-list__item-d-title">Тканина:</dt>
+									<dd class="item-page-catalog-list__item-d-descr">Порт’єрна</dd>
+								</div>
+							</dl>
+						</li>
+					</ul>
+					<div class="section-catalog__more-btn-wrap">
+						<button type="button" class="section-catalog__more-btn btn-white">Показати більше</button>
+					</div>
+
+				</div>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<!-- <div class="box">
+			<div class="item">lorem</div>
+			<div class="item">Lorem, ipsum.</div>
+			<div class="item">Lorem, ipsum dolor.</div>
+			<div class="item">Lorem ipsum dolor sit.</div>
+			<div class="item">lorem</div>
+			<div class="item">Lorem, ipsum.</div>
+			<div class="item">Lorem, ipsum dolor.</div>
+			<div class="item">Lorem ipsum dolor sit.</div>
+			<div class="item">lorem</div>
+			<div class="item">Lorem, ipsum.</div>
+			<div class="item">Lorem, ipsum dolor.</div>
+			<div class="item">Lorem ipsum dolor sit.</div>
+			<div class="item">lorem</div>
+			<div class="item">Lorem, ipsum.</div>
+			<div class="item">Lorem, ipsum dolor.</div>
+			<div class="item">Lorem ipsum dolor sit.</div>
+		</div> -->
+				<div class="footer__top footer__row top-footer">
+					<div class="footer__logo">
+						<a href="" class="header__logo"><img src="img/Logo.png" alt="Suerte & Elegancia Collections" loading="lazy" width="135" height="60"></a>
+						<p class="footer__logo-title">Інтер’єрний текстиль від європейських виробників.</p>
+					</div>
+					<ul class="footer__nav">
+						<div class="footer__nav-column">
+							<li class="footer__nav-item"><a href="">Каталог</a></li>
+							<li class="footer__nav-item"><a href="">Марки тканин</a></li>
+							<li class="footer__nav-item"><a href="">Про нас</a></li>
+							<li class="footer__nav-item"><a href="">Контакти</a></li>
+						</div>
+
+						<div class="footer__nav-column">
+							<li class="footer__nav-item"><a href="">Доставка та оплата</a></li>
+							<li class="footer__nav-item"><a href="">Обмін та повернення</a></li>
+							<li class="footer__nav-item"><a href="">Договір оферти</a></li>
+							<li class="footer__nav-item"><a href="">Політика конфіденціності</a></li>
+						</div>
+
+					</ul>
+					<div class="footer__action">
+						<div class="footer__social">
+							<a href="#" class="__icon-insta"></a>
+							<a href="#" class="__icon-fb"></a>
+						</div>
+						<div class="footer__arrow-to-top __icon-Arrow-right"></div>
+					</div>
+				</div>
+				<div class="footer__bottom"></div>
+			</div>
+		</footer>
+		<!-- <style>
+	.load-more {
+		display: none;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: rgba(0,0,0, .5);
+		z-index: 2;
+		pointer-events: none;
+	}
+	.load-more.active{
+		display: block;
+		position: fixed;
+	}
+	.lock body{
+		overflow: hidden;
+		touch-action: none;
+		overscroll-behavior: none;
+	}
+</style>
+
+<div class="load-more active">
+
+</div>
+<script>
+	let btnMore = document.querySelector('');
+</script> -->
+	</div>
+	<script src="https://unpkg.com/aos@2.3.1/dist/aos.js?_v=20230714130350"></script>
+	<script src="js/app.min.js?_v=20230714130350"></script>
+	<script>
+		AOS.init();
+	</script>
+</body>
+
+</html>
