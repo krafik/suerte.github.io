@@ -1,0 +1,55 @@
+%ic {
+	font-family: "icomoon";
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+[class*="__icon-"] {
+	&:before {
+		@extend %ic;
+		display: block;
+	}
+}
+
+.__icon-Arrow-down:before {
+	content: "\e900";
+  }
+  .__icon-Arrow-left-long:before {
+	content: "\e901";
+  }
+  .__icon-Arrow-right-long:before {
+	content: "\e902";
+  }
+  .__icon-Arrow-right:before {
+	content: "\e903";
+  }
+  .__icon-Arrow-Up:before {
+	content: "\e904";
+  }
+  .__icon-Cart:before {
+	content: "\e905";
+  }
+  .__icon-collapse-icon:before {
+	content: "\e906";
+  }
+  .__icon-fb:before {
+	content: "\e907";
+  }
+  .__icon-insta:before {
+	content: "\e908";
+  }
+  .__icon-Like:before {
+	content: "\e909";
+  }
+  .__icon-Search:before {
+	content: "\e90a";
+  }
+  .__icon-uncover-icon:before {
+	content: "\e90b";
+  }
+  

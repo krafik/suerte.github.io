@@ -1,0 +1,283 @@
+// Заголовки, загальні БЕМ блоки та інше...
+.page-title {
+	font-family: 'Cormorant';
+	font-style: normal;
+	// font-weight: 600;
+
+}
+
+.page-subtitle {}
+
+.visually-hidden {
+	position: absolute;
+	overflow: hidden;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	width: 1px;
+	height: 1px;
+	clip: rect(0 0 0 0);
+}
+
+.section-title {
+	font-family: 'Cormorant';
+	font-style: normal;
+	font-weight: 600;
+	// font-size: 50px;
+	// font-size: rem(50);
+	font-size: rem(60);
+	// line-height: 129.9%;
+	/* or 65px */
+	// line-height: math.div(65 ,50 );
+	line-height: math.div(96, 60);
+	text-transform: uppercase;
+	color: #424242;
+	// @include adaptiveValue("font-size", 50, 22);
+	@include adaptiveValue("font-size", 60, 32);
+}
+
+.section-subtitle {
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	// font-size: 22px;
+	// font-size: rem(22);
+	line-height: 165.4%;
+	/* or 36px */
+	line-height: math.div(36, 22);
+	// display: flex;
+	// align-items: center;
+	letter-spacing: 0.01em;
+
+	color: #5A5A5A;
+	@include adaptiveValue("font-size", 22, 16);
+}
+
+.section-grey {
+	background: #F1F1F1;
+}
+
+
+.form {
+
+	// .form__input-text
+	&__input-text {
+		background: transparent;
+		border-bottom: 1px solid #a4a0a0;
+		// padding-left: rem(22);
+		padding: rem(4) rem(22);
+
+		&::placeholder {
+			font-family: 'Roboto';
+			font-style: normal;
+			font-weight: 300;
+			font-size: 16px;
+			font-size: rem(16);
+			line-height: 129.4%;
+			line-height: math.div(21, 16);
+			/* or 21px */
+			// display: flex;
+			// align-items: center;
+			letter-spacing: 0.01em;
+			color: rgba(0, 0, 0, 0.37);
+		}
+
+		font-family: 'Roboto';
+		font-style: normal;
+		font-weight: 300;
+		font-size: 16px;
+		font-size: rem(16);
+		line-height: 129.4%;
+		line-height: math.div(21, 16);
+		/* or 21px */
+
+		// display: flex;
+		// align-items: center;
+		letter-spacing: 0.01em;
+
+		color: rgba(0, 0, 0, 0.37);
+
+		&:focus {
+			outline: none;
+			border-bottom: 1px solid #424242;
+		}
+	}
+
+	// .form__btn-submit
+	&__btn-submit {
+		max-width: rem(212);
+		// padding: rem(10) rem(30);
+	}
+}
+
+.btn-white {
+	display: inline-block;
+	background: #FAFAFA;
+	border: 1px solid #5A5A5A;
+	border-radius: 60px;
+	// padding: rem(10) rem(30);
+	padding: em(10, 18) em(30, 18);
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	// font-size: 18px;
+	// font-size: rem(18);
+	// line-height: 165.4%;
+	line-height: math.div(30, 18);
+	/* identical to box height, or 30px */
+
+	// display: flex;
+	// align-items: center;
+	letter-spacing: 0.01em;
+	@include adaptiveValue("font-size", 18, 14);
+	color: #5A5A5A;
+}
+
+.link {
+	position: relative;
+	display: flex;
+	// flex-direction: row-reverse;
+	@include adaptiveValue("font-size", 18, 14);
+	padding-right: rem(45);
+	line-height: math.div(26, 18);
+	letter-spacing: 0.045em;
+	color: #5A5A5A;
+	column-gap: rem(9);
+
+	span {
+		position: relative;
+
+		&::after {
+			content: '';
+			position: absolute;
+			bottom: em(5, 18);
+			left: 0;
+			width: 100%;
+			height: 1px;
+			background-color: #5A5A5A;
+		}
+	}
+
+	&::before {
+		position: absolute;
+		right: 0;
+		top: 50%;
+		transform: translateY(-50%);
+		font-size: rem(7);
+		transition: all 0.3s ease 0.2s;
+	}
+
+	@media (any-hover: hover) {
+		&:hover {
+			&::before {
+				// right: 15px;
+				animation-name: arrowCardAnimation;
+				animation-duration: 0.8s;
+				animation-timing-function: linear;
+				animation-iteration-count: infinite;
+				animation-direction: alternate;
+				animation-delay: 0.2s;
+			}
+		}
+	}
+}
+
+input[type="checkbox"] {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 1px;
+	height: 1px;
+	overflow: hidden;
+	opacity: 0;
+	padding: 0;
+	border: 0;
+	margin: -1px;
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+}
+
+// label.label 
+//normal
+.form__fake-checkbox {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+	width: 0.8em;
+	height: 0.8em;
+	box-shadow: 0 0 0 0.1em #4e4e4e;
+	background-color: #fff;
+	border-radius: 0.05em;
+	// border: 1px solid #4e4e4e;
+}
+
+//checked
+.body-item-filter__input-check:checked+.form__fake-checkbox {
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='100' title='check'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+	background-size: 70%;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+//focus
+.body-item-filter__input-check:focus+.form__fake-checkbox {
+	/*   box-shadow: 0 0 5px 1px rgba(0,0,0,.5); */
+	box-shadow: 0 0 0 0.1em #4e4e4e, 0 0 0.1em 0.2em #4e4e4e;
+}
+
+//disabled
+.body-item-filter__input-check:disabled+.form__fake-checkbox {
+	box-shadow: 0 0 0 0.1em #9b9b9b;
+}
+
+//disabled+checked
+.body-item-filter__input-check:disabled:checked+.form__fake-checkbox {
+	background-color: #ccc;
+	background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 512 512' width='100' title='check' fill='%23eee'%3E%3Cpath d='M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z' /%3E%3C/svg%3E");
+}
+
+.swiper{
+	z-index: 0!important;
+}
+ul.breadcrumb {
+	// padding: 10px 16px;
+	margin-bottom: rem(30);
+	list-style: none;
+	// background-color: #eee;
+  }
+  
+  /* Display list items side by side */
+  ul.breadcrumb li.breadcrumb__item {
+	display: inline;
+	// font-size: 16px;
+	font-size: rem(16);
+	font-family: 'Roboto';
+	font-style: normal;
+	font-weight: 300;
+	// line-height: 141%;
+	line-height: math.div(16 ,19);
+	letter-spacing: 0.01em;
+  }
+  ul.breadcrumb li.breadcrumb__title {
+	color: #959595;
+  }
+  
+  /* Add a slash symbol (/) before/behind each list item */
+  ul.breadcrumb li.breadcrumb__item+li.breadcrumb__item:before {
+	padding: 8px;
+	color: black;
+	content: "/\00a0";
+  }
+  
+  /* Add a color to all links inside the list */
+  ul.breadcrumb li.breadcrumb__item a.breadcrumb__link {
+	// color: #0275d8;
+	text-decoration: none;
+  }
+  
+  /* Add a color on mouse-over */
+  ul.breadcrumb li.breadcrumb__item a.breadcrumb__link:hover {
+	// color: #01447e;
+	text-decoration: underline;
+  }
